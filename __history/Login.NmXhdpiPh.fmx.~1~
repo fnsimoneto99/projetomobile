@@ -1,0 +1,59 @@
+inherited FrmLogin_NmXhdpiPh: TFrmLogin_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited LConteudo: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited imgBack: TImage
+      MultiResBitmap.Height = 1000
+      MultiResBitmap.Width = 600
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+    end
+    inherited LComponentes: TLayout
+      Position.Y = 214.000000000000000000
+      Size.Width = 400.000000000000000000
+      inherited LTopo: TLayout
+        Size.Width = 400.000000000000000000
+        inherited imgTopo: TImage
+          MultiResBitmap.Width = 339
+          Size.Width = 400.000000000000000000
+        end
+        inherited LLogo: TLayout
+          inherited imgUsuario: TImage
+            MultiResBitmap.Height = 512
+            MultiResBitmap.Width = 512
+          end
+        end
+      end
+      inherited LUsuario: TLayout
+        Size.Width = 400.000000000000000000
+        inherited Image2: TImage
+          MultiResBitmap.Width = 339
+          Size.Width = 400.000000000000000000
+        end
+      end
+      inherited LSeparadorEdits: TLayout
+        Size.Width = 400.000000000000000000
+      end
+      inherited LSenha: TLayout
+        Size.Width = 400.000000000000000000
+        inherited Image1: TImage
+          MultiResBitmap.Width = 339
+          Size.Width = 400.000000000000000000
+        end
+      end
+      inherited LSeparadorBotao: TLayout
+        Size.Width = 400.000000000000000000
+      end
+      inherited LBotao: TLayout
+        Size.Width = 400.000000000000000000
+        inherited btnLogin: TImage
+          MultiResBitmap.Height = 110
+          MultiResBitmap.Width = 339
+        end
+      end
+    end
+  end
+end
