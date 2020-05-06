@@ -29,6 +29,7 @@ type
     imgIconeSenha: TImage;
     edtUsuario: TEdit;
     edtSenha: TEdit;
+    procedure btnLoginClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,6 +42,13 @@ var
 implementation
 
 {$R *.fmx}
-{$R *.NmXhdpiPh.fmx ANDROID}
+
+uses Menu;
+
+procedure TFrmLogin.btnLoginClick(Sender: TObject);
+begin
+FrmMenu := TFrmMenu.Create(self);
+FrmMenu.Show;
+end;
 
 end.
