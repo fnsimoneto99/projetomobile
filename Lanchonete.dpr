@@ -5,7 +5,8 @@ uses
   FMX.Forms,
   Login in 'Login.pas' {FrmLogin},
   Menu in 'Menu.pas' {FrmMenu},
-  Modulo in 'Modulo.pas' {dm: TDataModule};
+  Modulo in 'Modulo.pas' {dm: TDataModule},
+  Pedidos in 'Pedidos.pas' {frmPedidos};
 
 {$R *.res}
 
@@ -14,5 +15,6 @@ begin
   Application.CreateForm(TFrmLogin, FrmLogin);
   Application.CreateForm(TFrmMenu, FrmMenu);
   Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TfrmPedidos, frmPedidos);
   Application.Run;
 end.

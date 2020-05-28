@@ -1,0 +1,63 @@
+inherited FrmMenu_LgXhdpiTb: TFrmMenu_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited LConteudo: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited imgBack: TImage
+      MultiResBitmap.Height = 1000
+      MultiResBitmap.Width = 600
+      Size.Width = 480.000000000000000000
+      Size.Height = 829.000000000000000000
+      inherited LAreaMenu: TLayout
+        Size.Width = 480.000000000000000000
+        Size.Height = 714.000000000000000000
+        inherited GridMenu: TGridPanelLayout
+          inherited ImgPedidos: TImage
+            MultiResBitmap.Height = 640
+            MultiResBitmap.Width = 640
+            OnClick = nil
+          end
+          inherited imgMovimentacoes: TImage
+            MultiResBitmap.Height = 640
+            MultiResBitmap.Width = 640
+            OnClick = nil
+          end
+          inherited imgProdutos: TImage
+            MultiResBitmap.Height = 640
+            MultiResBitmap.Width = 640
+            OnClick = nil
+          end
+          inherited imgReservas: TImage
+            MultiResBitmap.Height = 640
+            MultiResBitmap.Width = 640
+            OnClick = nil
+          end
+        end
+      end
+      inherited LTopo: TLayout
+        Size.Width = 480.000000000000000000
+        inherited imgBackTopo: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          Size.Width = 480.000000000000000000
+          inherited btnFechar: TButton
+            Position.X = 443.000000000000000000
+            Position.Y = 23.000000000000000000
+            Size.Height = 30.000000000000000000
+            OnClick = nil
+          end
+          inherited imgLogoUsuario: TImage
+            MultiResBitmap.Height = 720
+            MultiResBitmap.Width = 720
+          end
+        end
+      end
+      inherited LRodapeMenu: TLayout
+        Position.Y = 789.000000000000000000
+        Size.Width = 480.000000000000000000
+      end
+    end
+  end
+end
