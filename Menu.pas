@@ -33,6 +33,8 @@ type
     LEntradaseSaidas: TLayout;
     retEstoque: TRectangle;
     lblEstoque: TLabel;
+    procedure FormActivate(Sender: TObject);
+    procedure ImgPedidosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,7 +47,21 @@ var
 implementation
 
 {$R *.fmx}
+
+uses Modulo, Pedidos;
 {$R *.LgXhdpiTb.fmx ANDROID}
 {$R *.NmXhdpiPh.fmx ANDROID}
+
+procedure TFrmMenu.FormActivate(Sender: TObject);
+begin
+lblNome.Text := nomeFuncionario;
+lblFuncao.Text := cargoFuncionario;
+end;
+
+procedure TFrmMenu.ImgPedidosClick(Sender: TObject);
+begin
+FrmPedidos := TFrmPedidos.Create(self);
+FrmPedidos.Show();
+end;
 
 end.
