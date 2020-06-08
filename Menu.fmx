@@ -7,6 +7,7 @@ object FrmMenu: TFrmMenu
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
   DesignerMasterStyle = 0
   object LConteudo: TLayout
     Align = Client
@@ -6129,6 +6130,7 @@ object FrmMenu: TFrmMenu
             Size.Width = 136.000000000000000000
             Size.Height = 136.000000000000000000
             Size.PlatformDefault = False
+            OnClick = ImgPedidosClick
           end
           object imgMovimentacoes: TImage
             MultiResBitmap.Height = 640

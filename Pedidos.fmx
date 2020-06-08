@@ -7,6 +7,7 @@ object frmPedidos: TfrmPedidos
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
   DesignerMasterStyle = 0
   object LConteudo: TLayout
     Align = Client
@@ -176,6 +177,203 @@ object frmPedidos: TfrmPedidos
       Size.Height = 500.000000000000000000
       Size.PlatformDefault = False
       WrapMode = Stretch
+    end
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 359.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object LTopo: TLayout
+        Align = Top
+        Size.Width = 359.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object imgBackTopo: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          MultiResBitmap = <
+            item
+              Width = 450
+              Height = 168
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000001C2000000A808060000007300EE
+                CD000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                029549444154785EEDD53101C0300CC0B074FCA90643FB8C85A5C7107C76F70E
+                00447D7F0120C9080148334200D28C108034230420CD080148334200D28C1080
+                34230420CD080148334200D28C108034230420CD080148334200D28C10803423
+                0420CD080148334200D28C108034230420CD080148334200D28C108034230420
+                CD080148334200D28C108034230420CD080148334200D28C108034230420CD08
+                0148334200D28C108034230420CD080148334200D28C108034230420CD080148
+                334200D28C108034230420CD080148334200D28C108034230420CD0801483342
+                00D28C108034230420CD080148334200D28C108034230420CD080148334200D2
+                8C108034230420CD080148334200D28C108034230420CD080148334200D28C10
+                8034230420CD080148334200D28C108034230420CD080148334200D28C108034
+                230420CD080148334200D28C108034230420CD080148334200D28C1080342304
+                20CD080148334200D28C108034230420CD080148334200D28C108034230420CD
+                080148334200D28C108034230420CD080148334200D28C108034230420CD0801
+                48334200D28C108034230420CD080148334200D28C108034230420CD08014833
+                4200D28C108034230420CD080148334200D28C108034230420CD080148334200
+                D28C108034230420CD080148334200D28C108034230420CD080148334200D28C
+                108034230420CD080148334200D28C108034230420CD080148334200D28C1080
+                34230420CD080148334200D28C108034230420CD080148334200D28C10803423
+                0420CD080148334200D28C108034230420CD080148334200D28C108034230420
+                CD080148334200D28C108034230420CD080148334200D28C108034230420CD08
+                0148334200D28C108034230420CD080148334200C2661E41250516352EBC1300
+                00000049454E44AE426082}
+              FileName = 
+                'C:\Users\hugov\Desktop\Cursos Abril e Maio\03 - Aplicativo para ' +
+                'Igrejas\Arquivos\Imagens\fundo para topo.png'
+            end>
+          Align = Client
+          Size.Width = 359.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+          object btnBuscar: TButton
+            Align = Right
+            Position.X = 311.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'searchtoolbutton'
+            TabOrder = 2
+            Text = 'btnBuscar'
+            OnClick = btnBuscarClick
+          end
+          object data: TDateEdit
+            Date = 43564.000000000000000000
+            OnChange = dataChange
+            Align = Right
+            Position.X = 182.000000000000000000
+            Size.Width = 129.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+          end
+          object btnVoltar: TButton
+            Align = Left
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 1
+            Text = 'btnVoltar'
+            OnClick = btnVoltarClick
+          end
+        end
+      end
+      object LAreaGrid: TLayout
+        Align = Client
+        Size.Width = 359.000000000000000000
+        Size.Height = 392.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lista: TListView
+          ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+          ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 359.000000000000000000
+          Size.Height = 392.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          SearchAlwaysOnTop = False
+        end
+      end
+      object LRodapeForm: TLayout
+        Align = Bottom
+        Position.Y = 440.000000000000000000
+        Size.Width = 359.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object imgBackRodape: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          MultiResBitmap = <
+            item
+              Width = 450
+              Height = 168
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000001C2000000A808060000007300EE
+                CD000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                029549444154785EEDD53101C0300CC0B074FCA90643FB8C85A5C7107C76F70E
+                00447D7F0120C9080148334200D28C108034230420CD080148334200D28C1080
+                34230420CD080148334200D28C108034230420CD080148334200D28C10803423
+                0420CD080148334200D28C108034230420CD080148334200D28C108034230420
+                CD080148334200D28C108034230420CD080148334200D28C108034230420CD08
+                0148334200D28C108034230420CD080148334200D28C108034230420CD080148
+                334200D28C108034230420CD080148334200D28C108034230420CD0801483342
+                00D28C108034230420CD080148334200D28C108034230420CD080148334200D2
+                8C108034230420CD080148334200D28C108034230420CD080148334200D28C10
+                8034230420CD080148334200D28C108034230420CD080148334200D28C108034
+                230420CD080148334200D28C108034230420CD080148334200D28C1080342304
+                20CD080148334200D28C108034230420CD080148334200D28C108034230420CD
+                080148334200D28C108034230420CD080148334200D28C108034230420CD0801
+                48334200D28C108034230420CD080148334200D28C108034230420CD08014833
+                4200D28C108034230420CD080148334200D28C108034230420CD080148334200
+                D28C108034230420CD080148334200D28C108034230420CD080148334200D28C
+                108034230420CD080148334200D28C108034230420CD080148334200D28C1080
+                34230420CD080148334200D28C108034230420CD080148334200D28C10803423
+                0420CD080148334200D28C108034230420CD080148334200D28C108034230420
+                CD080148334200D28C108034230420CD080148334200D28C108034230420CD08
+                0148334200D28C108034230420CD080148334200C2661E41250516352EBC1300
+                00000049454E44AE426082}
+              FileName = 
+                'C:\Users\hugov\Desktop\Cursos Abril e Maio\03 - Aplicativo para ' +
+                'Igrejas\Arquivos\Imagens\fundo para topo.png'
+            end>
+          Align = Client
+          Size.Width = 263.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+        end
+        object btnInserir: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'additembutton'
+          TabOrder = 2
+          Text = 'btnInserir'
+        end
+        object btnDeletar: TButton
+          Align = Right
+          Position.X = 311.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 0
+          Text = 'btnDeletar'
+          OnClick = btnDeletarClick
+        end
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dm.queryPedidosCon
+    ScopeMappings = <>
+    Left = 168
+    Top = 240
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'mesa'
+      Control = lista
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
     end
   end
 end

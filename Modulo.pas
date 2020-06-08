@@ -3,11 +3,22 @@ unit Modulo;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, DBAccess, Uni;
+  System.SysUtils, System.Classes, Data.DB, DBAccess, Uni, UniProvider,
+  MySQLUniProvider, MemDS;
 
 type
   Tdm = class(TDataModule)
-    UniConnection1: TUniConnection;
+    con: TUniConnection;
+    MySQLUniProvider1: TMySQLUniProvider;
+    queryLogin: TUniQuery;
+    queryPedidosCon: TUniQuery;
+    queryPedidosConid: TIntegerField;
+    queryPedidosConid_venda: TIntegerField;
+    queryPedidosConvalor: TFloatField;
+    queryPedidosConmesa: TStringField;
+    queryPedidosConfuncionario: TStringField;
+    queryPedidosCondata: TDateField;
+    queryPedidosExec: TUniQuery;
   private
     { Private declarations }
   public
@@ -16,6 +27,12 @@ type
 
 var
   dm: Tdm;
+
+  nomeFuncionario: string;
+  cargoFuncionario: string;
+
+  idPedido: string;
+  idItemPedido: string;
 
 implementation
 

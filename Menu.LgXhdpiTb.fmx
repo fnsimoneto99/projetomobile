@@ -17,22 +17,18 @@ inherited FrmMenu_LgXhdpiTb: TFrmMenu_LgXhdpiTb
           inherited ImgPedidos: TImage
             MultiResBitmap.Height = 640
             MultiResBitmap.Width = 640
-            OnClick = nil
           end
           inherited imgMovimentacoes: TImage
             MultiResBitmap.Height = 640
             MultiResBitmap.Width = 640
-            OnClick = nil
           end
           inherited imgProdutos: TImage
             MultiResBitmap.Height = 640
             MultiResBitmap.Width = 640
-            OnClick = nil
           end
           inherited imgReservas: TImage
             MultiResBitmap.Height = 640
             MultiResBitmap.Width = 640
-            OnClick = nil
           end
         end
       end
@@ -46,7 +42,6 @@ inherited FrmMenu_LgXhdpiTb: TFrmMenu_LgXhdpiTb
             Position.X = 443.000000000000000000
             Position.Y = 23.000000000000000000
             Size.Height = 30.000000000000000000
-            OnClick = nil
           end
           inherited imgLogoUsuario: TImage
             MultiResBitmap.Height = 720
@@ -57,6 +52,9 @@ inherited FrmMenu_LgXhdpiTb: TFrmMenu_LgXhdpiTb
       inherited LRodapeMenu: TLayout
         Position.Y = 789.000000000000000000
         Size.Width = 480.000000000000000000
+        inherited LTotal: TLayout
+          Position.X = 327.000000000000000000
+        end
       end
     end
   end
