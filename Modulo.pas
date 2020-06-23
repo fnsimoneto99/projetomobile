@@ -19,6 +19,17 @@ type
     queryPedidosConfuncionario: TStringField;
     queryPedidosCondata: TDateField;
     queryPedidosExec: TUniQuery;
+    oQ_Mesas: TUniQuery;
+    oQ_Pratos: TUniQuery;
+    oQ_ItensPedido: TUniQuery;
+    oQ_ItensExec: TUniQuery;
+    oQ_ItensPedidoid: TIntegerField;
+    oQ_ItensPedidoid_pedido: TIntegerField;
+    oQ_ItensPedidoprato: TStringField;
+    oQ_ItensPedidovalor: TFloatField;
+    oQ_ItensPedidovalor_total: TFloatField;
+    oQ_Pratos2: TUniQuery;
+    oQ_MovimentacaoExec: TUniQuery;
   private
     { Private declarations }
   public
@@ -28,11 +39,11 @@ type
 var
   dm: Tdm;
 
-  nomeFuncionario: string;
-  cargoFuncionario: string;
+  nomeFuncionario  : string;
+  cargoFuncionario : string;
 
-  idPedido: string;
-  idItemPedido: string;
+  idPedido         : string;
+  idItemPedido     : string;
 
 implementation
 

@@ -47,44 +47,36 @@ uses Menu, Modulo;
 
 procedure TFrmLogin.btnLoginClick(Sender: TObject);
 begin
+   if (edtUsuario.Text <> '') and (edtSenha.Text <> '') then
+   begin
+      dm.con.Connected := true;
+      dm.queryLogin.Active := true;
 
-if (edtUsuario.Text <> '') and (edtSenha.Text <> '') then
-begin
-  dm.con.Connected := true;
-  dm.queryLogin.Active := true;
+      dm.queryLogin.Close;
+      dm.queryLogin.SQL.Clear;
+      dm.queryLogin.SQL.Add('select * from funcionarios where usuario = :usuario and senha = :senha');
+      dm.queryLogin.ParamByName('usuario').AsString := edtUsuario.Text;
+      dm.queryLogin.ParamByName('senha').AsString := edtSenha.Text;
+      dm.queryLogin.Open;
 
-  dm.queryLogin.Close;
-  dm.queryLogin.SQL.Clear;
-  dm.queryLogin.SQL.Add('select * from funcionarios where usuario = :usuario and senha = :senha');
-  dm.queryLogin.ParamByName('usuario').AsString := edtUsuario.Text;
-  dm.queryLogin.ParamByName('senha').AsString := edtSenha.Text;
-  dm.queryLogin.Open;
+      if not dm.queryLogin.IsEmpty then
+      begin
+      //RECUPERAR DADOS DO USUÁRIO LOGADO
+      nomeFuncionario := dm.queryLogin['nome'];
+      cargoFuncionario := dm.queryLogin['cargo'];
 
-  if not dm.queryLogin.IsEmpty then
-  begin
-
-  //RECUPERAR DADOS DO USUÁRIO LOGADO
-  nomeFuncionario := dm.queryLogin['nome'];
-  cargoFuncionario := dm.queryLogin['cargo'];
-
-  FrmMenu := TFrmMenu.Create(self);
-  FrmMenu.Show();
-
-  end
-  else
-  begin
-  showMessage('Dados Incorretos');
-  end;
-
-
-end
-else
-begin
-showMessage('Preencha os Campos');
-
-
-end;
-
+      FrmMenu := TFrmMenu.Create(self);
+      FrmMenu.Show();
+      end
+      else
+      begin
+         showMessage('Dados Incorretos');
+      end;
+   end
+   else
+   begin
+      showMessage('Preencha os Campos');
+   end;
 end;
 
 end.
