@@ -35,6 +35,7 @@ type
     procedure btnVoltarClick(Sender: TObject);
     procedure btnBuscarClick(Sender: TObject);
     procedure btnDeletarClick(Sender: TObject);
+    procedure btnInserirClick(Sender: TObject);
   private
     { Private declarations }
     procedure listar;
@@ -49,49 +50,54 @@ implementation
 
 {$R *.fmx}
 
-uses Modulo;
+uses Modulo, NovoPedido;
 
 { TfrmPedidos }
 procedure TfrmPedidos.btnBuscarClick(Sender: TObject);
 begin
-listar;
+   listar;
 end;
 
 procedure TfrmPedidos.btnDeletarClick(Sender: TObject);
 begin
-  dm.con.Connected := true;
-  dm.queryPedidosExec.Active := true;
+   dm.con.Connected := true;
+   dm.queryPedidosExec.Active := true;
 
-  idPedido := dm.queryPedidosCon.FieldByName('id').Value;
+   idPedido := dm.queryPedidosCon.FieldByName('id').Value;
 
-  dm.queryPedidosExec.Close;
-  dm.queryPedidosExec.SQL.Clear;
-  dm.queryPedidosExec.SQL.Add('delete from pedidos where id = :id');
-  dm.queryPedidosExec.ParamByName('id').AsString := idPedido;
+   dm.queryPedidosExec.Close;
+   dm.queryPedidosExec.SQL.Clear;
+   dm.queryPedidosExec.SQL.Add('delete from pedidos where id = :id');
+   dm.queryPedidosExec.ParamByName('id').AsString := idPedido;
 
-  dm.queryPedidosExec.Execute;
+   dm.queryPedidosExec.Execute;
+end;
+
+procedure TfrmPedidos.btnInserirClick(Sender: TObject);
+begin
+   FrmNovoPedido := FrmNovoPedido.Create(self);
+   FrmNovoPedido.Show();
 end;
 
 procedure TfrmPedidos.btnVoltarClick(Sender: TObject);
 begin
-Close;
+   Close;
 end;
 
 procedure TfrmPedidos.dataChange(Sender: TObject);
 begin
-listar;
+   listar;
 end;
 
 procedure TFrmPedidos.FormActivate(Sender: TObject);
 begin
-data.Date := Date;
-listar;
+   data.Date := Date;
+   listar;
 end;
 
 procedure TFrmPedidos.listar;
 var
-item : TListViewItem;
-
+   item : TListViewItem;
 begin
   dm.con.Connected := true;
   dm.queryPedidosCon.Active := true;
@@ -102,20 +108,17 @@ begin
   dm.queryPedidosCon.ParamByName('data').AsString := FormatDateTime('yyyy/mm/dd', data.Date);
 
   dm.queryPedidosCon.Open;
-   lista.Items.Clear;
-   lista.BeginUpdate;
+  lista.Items.Clear;
+  lista.BeginUpdate;
 
    while not dm.queryPedidosCon.Eof do
    begin
-     item := lista.Items.Add;
-     item.Detail := dm.queryPedidosCon.FieldByName('funcionario').AsString;
-     item.Text := 'Mesa ' + dm.queryPedidosCon.FieldByName('mesa').AsString;
-     dm.queryPedidosCon.Next;
+      item := lista.Items.Add;
+      item.Detail := dm.queryPedidosCon.FieldByName('funcionario').AsString;
+      item.Text := 'Mesa ' + dm.queryPedidosCon.FieldByName('mesa').AsString;
+      dm.queryPedidosCon.Next;
    end;
-
    lista.EndUpdate;
-
-
 end;
 
 end.

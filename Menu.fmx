@@ -1,7 +1,7 @@
 object FrmMenu: TFrmMenu
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Principal'
   ClientHeight = 533
   ClientWidth = 368
   FormFactor.Width = 320

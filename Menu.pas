@@ -54,14 +54,14 @@ uses Modulo, Pedidos;
 
 procedure TFrmMenu.FormActivate(Sender: TObject);
 begin
-lblNome.Text := nomeFuncionario;
-lblFuncao.Text := cargoFuncionario;
+   lblNome.Text := nomeFuncionario;
+   lblFuncao.Text := cargoFuncionario;
 end;
 
 procedure TFrmMenu.ImgPedidosClick(Sender: TObject);
 begin
-FrmPedidos := TFrmPedidos.Create(self);
-FrmPedidos.Show();
+   FrmPedidos := TFrmPedidos.Create(self);
+   FrmPedidos.Show();
 end;
 
 end.

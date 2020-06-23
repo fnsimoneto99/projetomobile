@@ -1,7 +1,7 @@
 object frmPedidos: TfrmPedidos
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'An'#225'lise de Pedidos'
   ClientHeight = 500
   ClientWidth = 359
   FormFactor.Width = 320
@@ -340,6 +340,7 @@ object frmPedidos: TfrmPedidos
           StyleLookup = 'additembutton'
           TabOrder = 2
           Text = 'btnInserir'
+          OnClick = btnInserirClick
         end
         object btnDeletar: TButton
           Align = Right
