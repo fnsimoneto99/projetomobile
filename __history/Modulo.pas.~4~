@@ -1,0 +1,56 @@
+unit Modulo;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, DBAccess, Uni, UniProvider,
+  MySQLUniProvider, MemDS;
+
+type
+  Tdm = class(TDataModule)
+    con: TUniConnection;
+    MySQLUniProvider1: TMySQLUniProvider;
+    queryLogin: TUniQuery;
+    queryPedidosCon: TUniQuery;
+    queryPedidosConid: TIntegerField;
+    queryPedidosConid_venda: TIntegerField;
+    queryPedidosConvalor: TFloatField;
+    queryPedidosConmesa: TStringField;
+    queryPedidosConfuncionario: TStringField;
+    queryPedidosCondata: TDateField;
+    queryPedidosExec: TUniQuery;
+    oQ_Mesas: TUniQuery;
+    oQ_Pratos: TUniQuery;
+    oQ_ItensPedido: TUniQuery;
+    oQ_ItensExec: TUniQuery;
+    oQ_ItensExecid: TIntegerField;
+    oQ_ItensExecid_pedido: TIntegerField;
+    oQ_ItensExecprato: TStringField;
+    oQ_ItensExecvalor: TFloatField;
+    oQ_ItensExecquantidade: TIntegerField;
+    oQ_ItensExecvalor_total: TFloatField;
+    oQ_ItensExecmesa: TStringField;
+    oQ_ItensExecstatus: TStringField;
+    oQ_ItensExecfuncionario: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dm: Tdm;
+
+  nomeFuncionario  : string;
+  cargoFuncionario : string;
+
+  idPedido         : string;
+  idItemPedido     : string;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
