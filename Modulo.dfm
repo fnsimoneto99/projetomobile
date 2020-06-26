@@ -5,14 +5,24 @@ object dm: Tdm
   object con: TUniConnection
     ProviderName = 'MySQL'
     Port = 3306
+<<<<<<< HEAD
     Database = 'lanchonete'
     Username = 'fnsimoneto'
     Server = 'localhost'
+=======
+    Database = 'restaurante'
+    Username = 'adrianols'
+    Server = '127.0.0.1'
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
     Connected = True
     LoginPrompt = False
     Left = 24
     Top = 40
+<<<<<<< HEAD
     EncryptedPassword = 'B9FF9AFF93FF96FF8FFF9AFFC6FFC7FFCCFFC9FF'
+=======
+    EncryptedPassword = 'CEFFC9FFC7FFC7FFCCFFC6FFC9FFCBFF'
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
   end
   object MySQLUniProvider1: TMySQLUniProvider
     Left = 632
@@ -29,7 +39,11 @@ object dm: Tdm
     Connection = con
     SQL.Strings = (
       'select * from pedidos')
+<<<<<<< HEAD
     Left = 152
+=======
+    Left = 136
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
     Top = 40
     object queryPedidosConid: TIntegerField
       AutoGenerateValue = arAutoInc
@@ -62,7 +76,11 @@ object dm: Tdm
     Connection = con
     SQL.Strings = (
       'select * from pedidos')
+<<<<<<< HEAD
     Left = 248
+=======
+    Left = 224
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
     Top = 40
   end
   object oQ_Mesas: TUniQuery
@@ -120,6 +138,7 @@ object dm: Tdm
     Left = 32
     Top = 200
   end
+<<<<<<< HEAD
   object queryMovExec: TUniQuery
     Connection = con
     SQL.Strings = (
@@ -140,5 +159,13 @@ object dm: Tdm
       'select * from reservas')
     Left = 488
     Top = 40
+=======
+  object oQ_MovimentacaoExec: TUniQuery
+    Connection = con
+    SQL.Strings = (
+      'select * from movimentacoes')
+    Left = 136
+    Top = 200
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
   end
 end

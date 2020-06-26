@@ -113,10 +113,17 @@ begin
 
    while not dm.queryPedidosCon.Eof do
    begin
+<<<<<<< HEAD
      item := lista.Items.Add;
      item.Detail := FormatFloat('R$ ###,##0.00', dm.queryPedidosCon.FieldByName('valor').Value) + ' - ' + dm.queryPedidosCon.FieldByName('funcionario').AsString;
      item.Text := 'Mesa ' + dm.queryPedidosCon.FieldByName('mesa').AsString;
      dm.queryPedidosCon.Next;
+=======
+      item := lista.Items.Add;
+      item.Detail := dm.queryPedidosCon.FieldByName('funcionario').AsString;
+      item.Text := 'Mesa ' + dm.queryPedidosCon.FieldByName('mesa').AsString;
+      dm.queryPedidosCon.Next;
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
    end;
    lista.EndUpdate;
 end;

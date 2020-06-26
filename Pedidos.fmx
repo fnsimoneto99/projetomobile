@@ -1,7 +1,11 @@
 object frmPedidos: TfrmPedidos
   Left = 0
   Top = 0
+<<<<<<< HEAD
   Caption = 'Pedidos'
+=======
+  Caption = 'An'#225'lise de Pedidos'
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
   ClientHeight = 500
   ClientWidth = 359
   FormFactor.Width = 320

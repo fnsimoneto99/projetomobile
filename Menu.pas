@@ -35,8 +35,11 @@ type
     lblEstoque: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure ImgPedidosClick(Sender: TObject);
+<<<<<<< HEAD
     procedure imgMovimentacoesClick(Sender: TObject);
     procedure imgReservasClick(Sender: TObject);
+=======
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
   private
     { Private declarations }
   public
@@ -50,7 +53,11 @@ implementation
 
 {$R *.fmx}
 
+<<<<<<< HEAD
 uses Modulo, Pedidos, Movimentacoes, NovoPedido, Reservas;
+=======
+uses Modulo, Pedidos;
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 {$R *.LgXhdpiTb.fmx ANDROID}
 {$R *.NmXhdpiPh.fmx ANDROID}
 
@@ -60,22 +67,28 @@ begin
    lblFuncao.Text := cargoFuncionario;
 end;
 
+<<<<<<< HEAD
 procedure TFrmMenu.imgMovimentacoesClick(Sender: TObject);
 begin
    FrmMov := TFrmMov.Create(self);
    FrmMov.Show();
 end;
 
+=======
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 procedure TFrmMenu.ImgPedidosClick(Sender: TObject);
 begin
    FrmPedidos := TFrmPedidos.Create(self);
    FrmPedidos.Show();
 end;
 
+<<<<<<< HEAD
 procedure TFrmMenu.imgReservasClick(Sender: TObject);
 begin
    FrmReservas := TFrmReservas.Create(self);
    FrmReservas.Show();
 end;
 
+=======
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 end.

@@ -11,6 +11,12 @@ Coordinates=530,280,95,51
 [dm.queryPratosCon]
 Coordinates=340,322,112,51
 
+<<<<<<< HEAD
+=======
+[LConteudo]
+Coordinates=290,400,68,33
+
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 [LRodapeForm]
 Coordinates=200,400,84,33
 
@@ -117,6 +123,9 @@ Coordinates=119,178,82,33
 Coordinates=200,340,50,51
 Visible=True
 
+<<<<<<< HEAD
 [LConteudo]
 Coordinates=290,400,68,33
 
+=======
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e

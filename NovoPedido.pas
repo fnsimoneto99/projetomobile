@@ -68,7 +68,11 @@ implementation
 {$R *.fmx}
 {$R *.NmXhdpiPh.fmx ANDROID}
 
+<<<<<<< HEAD
 uses Modulo, Pedidos;
+=======
+uses Modulo;
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 
 procedure TFrmNovoPedido.ovB_AdicionarClick(Sender: TObject);
 var
@@ -161,6 +165,7 @@ begin
 
       dm.queryPedidosExec.Execute;
 
+<<<<<<< HEAD
       dm.queryPedidosExec.Close;
       dm.queryPedidosExec.SQL.Clear;
       dm.queryPedidosExec.SQL.Add('INSERT INTO movimentacoes (tipo, movimento, valor, funcionario, data, id_movimento) values (:tipo, :movimento, :valor, :funcionario, curDate(), :id_movimento)');
@@ -170,6 +175,17 @@ begin
       dm.queryPedidosExec.ParamByName('funcionario').Value :=  nomeFuncionario;
       dm.queryPedidosExec.ParamByName('id_movimento').Value :=  ultimoId;
       dm.queryPedidosExec.Execute;
+=======
+      dm.oQ_MovimentacaoExec.Close;
+      dm.oQ_MovimentacaoExec.SQL.Clear;
+      dm.oQ_MovimentacaoExec.SQL.Add('INSERT INTO movimentacoes (tipo, movimento, valor, funcionario, data, id_movimento) values (:tipo, :movimento, :valor, :funcionario, curDate(), :id_movimento)');
+      dm.oQ_MovimentacaoExec.ParamByName('tipo').Value :=  'Entrada';
+      dm.oQ_MovimentacaoExec.ParamByName('movimento').Value :=  'Pedido';
+      dm.oQ_MovimentacaoExec.ParamByName('valor').Value :=  valortotal;
+      dm.oQ_MovimentacaoExec.ParamByName('funcionario').Value :=  nomeFuncionario;
+      dm.oQ_MovimentacaoExec.ParamByName('id_movimento').Value :=  ultimoId;
+      dm.oQ_MovimentacaoExec.Execute;
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
 
 
       valortotal := 0;

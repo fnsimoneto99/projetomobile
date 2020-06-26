@@ -1,7 +1,11 @@
 object FrmMenu: TFrmMenu
   Left = 0
   Top = 0
+<<<<<<< HEAD
   Caption = 'Menu Principal'
+=======
+  Caption = 'Principal'
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
   ClientHeight = 533
   ClientWidth = 368
   FormFactor.Width = 320
@@ -8181,10 +8185,17 @@ object FrmMenu: TFrmMenu
                 FileName = 'C:\Users\fnsim\Downloads\Arquivos\Icones\Movimentacao.png'
               end>
             Align = Client
+<<<<<<< HEAD
             Size.Width = 136.000000000000000000
             Size.Height = 136.000000000000000000
             Size.PlatformDefault = False
             OnClick = imgMovimentacoesClick
+=======
+            Enabled = False
+            Size.Width = 136.000000000000000000
+            Size.Height = 136.000000000000000000
+            Size.PlatformDefault = False
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
           end
           object imgProdutos: TImage
             MultiResBitmap.Height = 640
@@ -14985,7 +14996,10 @@ object FrmMenu: TFrmMenu
             Size.Width = 136.000000000000000000
             Size.Height = 136.000000000000000000
             Size.PlatformDefault = False
+<<<<<<< HEAD
             OnClick = imgReservasClick
+=======
+>>>>>>> 2af0f27d5d6e89c5c5be26fd3bdd87504dff7c1e
           end
         end
       end
