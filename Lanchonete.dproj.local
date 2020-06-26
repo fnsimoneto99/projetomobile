@@ -2,32 +2,32 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/04/22 22:22:15.000.314,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/04/22 22:22:35.000.914,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Login.fmx</Transaction>
-    <Transaction>2020/04/22 22:22:35.000.914,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Login.pas</Transaction>
-    <Transaction>2020/04/22 22:22:41.000.604,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Lanchonete.dproj</Transaction>
+    <Transaction>2020/04/22 22:22:35.000.914,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Login.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2020/04/22 22:22:35.000.914,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Login.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 22:22:41.000.604,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Lanchonete.dproj=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2020/05/05 21:21:14.000.842,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/05/05 21:21:43.000.727,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Menu.fmx</Transaction>
-    <Transaction>2020/05/05 21:21:43.000.727,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Menu.pas</Transaction>
+    <Transaction>2020/05/05 21:21:43.000.727,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Menu.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
+    <Transaction>2020/05/05 21:21:43.000.727,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Menu.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
     <Transaction>2020/05/19 21:39:26.000.813,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/05/19 21:40:08.000.902,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Modulo.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/05/19 21:40:08.000.902,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Modulo.dfm=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.dfm</Transaction>
+    <Transaction>2020/05/19 21:40:08.000.902,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.dfm=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Modulo.dfm</Transaction>
+    <Transaction>2020/05/19 21:40:08.000.902,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Modulo.pas</Transaction>
     <Transaction>2020/05/25 19:52:15.000.608,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/05/25 19:58:51.000.952,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Pedidos.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/05/25 19:58:51.000.952,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Pedidos.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
+    <Transaction>2020/05/25 19:58:51.000.952,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Pedidos.fmx</Transaction>
+    <Transaction>2020/05/25 19:58:51.000.952,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Pedidos.pas</Transaction>
     <Transaction>2020/06/25 18:22:40.000.119,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 18:25:33.000.924,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Movimentacoes.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
-    <Transaction>2020/06/25 18:25:33.000.924,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Movimentacoes.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
+    <Transaction>2020/06/25 18:25:33.000.924,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Movimentacoes.pas</Transaction>
+    <Transaction>2020/06/25 18:25:33.000.924,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Movimentacoes.fmx</Transaction>
     <Transaction>2020/06/25 20:11:14.000.912,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 20:11:25.000.816,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 20:11:25.000.816,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
+    <Transaction>2020/06/25 20:11:25.000.816,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx</Transaction>
+    <Transaction>2020/06/25 20:11:25.000.816,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas</Transaction>
     <Transaction>2020/06/25 21:02:41.000.835,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=</Transaction>
     <Transaction>2020/06/25 21:04:10.000.361,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 21:04:44.000.213,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas</Transaction>
-    <Transaction>2020/06/25 21:04:44.000.213,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx</Transaction>
-    <Transaction>2020/06/25 21:24:06.118,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=</Transaction>
-    <Transaction>2020/06/25 21:25:58.752,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 21:26:07.035,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
-    <Transaction>2020/06/25 21:26:07.035,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
+    <Transaction>2020/06/25 21:04:44.000.213,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx</Transaction>
+    <Transaction>2020/06/25 21:04:44.000.213,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
+    <Transaction>2020/06/25 21:24:06.000.118,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas=</Transaction>
+    <Transaction>2020/06/25 21:25:58.000.752,=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas</Transaction>
+    <Transaction>2020/06/25 21:26:07.000.035,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.fmx=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.fmx</Transaction>
+    <Transaction>2020/06/25 21:26:07.000.035,C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Unit1.pas=C:\Users\fnsim\Documents\Embarcadero\Studio\Projects\AppMobile\Reservas.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>
