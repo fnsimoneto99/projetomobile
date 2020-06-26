@@ -29,7 +29,9 @@ type
     oQ_ItensPedidovalor: TFloatField;
     oQ_ItensPedidovalor_total: TFloatField;
     oQ_Pratos2: TUniQuery;
-    oQ_MovimentacaoExec: TUniQuery;
+    queryMovExec: TUniQuery;
+    queryMovCon: TUniQuery;
+    queryReservasCon: TUniQuery;
   private
     { Private declarations }
   public

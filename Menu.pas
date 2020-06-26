@@ -35,6 +35,8 @@ type
     lblEstoque: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure ImgPedidosClick(Sender: TObject);
+    procedure imgMovimentacoesClick(Sender: TObject);
+    procedure imgReservasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,7 +50,7 @@ implementation
 
 {$R *.fmx}
 
-uses Modulo, Pedidos;
+uses Modulo, Pedidos, Movimentacoes, NovoPedido, Reservas;
 {$R *.LgXhdpiTb.fmx ANDROID}
 {$R *.NmXhdpiPh.fmx ANDROID}
 
@@ -58,10 +60,22 @@ begin
    lblFuncao.Text := cargoFuncionario;
 end;
 
+procedure TFrmMenu.imgMovimentacoesClick(Sender: TObject);
+begin
+   FrmMov := TFrmMov.Create(self);
+   FrmMov.Show();
+end;
+
 procedure TFrmMenu.ImgPedidosClick(Sender: TObject);
 begin
    FrmPedidos := TFrmPedidos.Create(self);
    FrmPedidos.Show();
+end;
+
+procedure TFrmMenu.imgReservasClick(Sender: TObject);
+begin
+   FrmReservas := TFrmReservas.Create(self);
+   FrmReservas.Show();
 end;
 
 end.

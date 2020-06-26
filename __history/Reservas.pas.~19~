@@ -1,0 +1,42 @@
+unit Reservas;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.StdCtrls, FMX.ListView, FMX.DateTimeCtrls, FMX.Controls.Presentation,
+  FMX.Objects, FMX.Layouts;
+
+type
+  TfrmReservas = class(TForm)
+    LBackground: TLayout;
+    ImgBack: TImage;
+    LConteudo: TLayout;
+    LTopo: TLayout;
+    imgBackTopo: TImage;
+    Button1: TButton;
+    Button2: TButton;
+    data: TDateEdit;
+    LAreaGrid: TLayout;
+    lista: TListView;
+    LRodapeForm: TLayout;
+    imgBackRodape: TImage;
+    LTotal: TLayout;
+    Label3: TLabel;
+    lblTotal: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmReservas: TfrmReservas;
+
+implementation
+
+{$R *.fmx}
+
+end.

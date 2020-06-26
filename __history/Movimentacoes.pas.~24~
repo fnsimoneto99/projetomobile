@@ -1,0 +1,110 @@
+unit Movimentacoes;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.StdCtrls, FMX.ListView, FMX.DateTimeCtrls, FMX.Controls.Presentation,
+  FMX.Objects, FMX.Layouts;
+
+type
+  TfrmMov = class(TForm)
+    LBackground: TLayout;
+    ImgBack: TImage;
+    LConteudo: TLayout;
+    LTopo: TLayout;
+    imgBackTopo: TImage;
+    Button1: TButton;
+    Button2: TButton;
+    data: TDateEdit;
+    LAreaGrid: TLayout;
+    lista: TListView;
+    LRodapeForm: TLayout;
+    imgBackRodape: TImage;
+    LEntradaseSaidas: TLayout;
+    Label1: TLabel;
+    Label2: TLabel;
+    lblEntradas: TLabel;
+    lblSaidas: TLabel;
+    LTotal: TLayout;
+    Label3: TLabel;
+    lblTotal: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+    procedure listar;
+    procedure totalizarEntradas;
+    procedure totalizarSaidas;
+    procedure totalizar;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMov: TfrmMov;
+
+implementation
+
+{$R *.fmx}
+
+uses Modulo;
+
+procedure TFrmMov.Button1Click(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TFrmMov.FormActivate(Sender: TObject);
+begin
+data.Date := Date;
+listar;
+end;
+
+procedure TFrmMov.listar;
+begin
+var
+  item : TListViewItem;
+begin
+  dm.con.Connected := true;
+  dm.queryMovCon.Active := true;
+
+  dm.queryMovCon.Close;
+  dm.queryMovCon.SQL.Clear;
+  dm.queryMovCon.SQL.Add('select * from movimentacoes where data = :data');
+  dm.queryMovCon.ParamByName('data').AsString := FormatDateTime('yyyy/mm/dd', data.Date);
+
+  dm.queryMovCon.Open;
+  dm.queryMovCon.First;
+
+   lista.Items.Clear;
+   lista.BeginUpdate;
+
+   while not dm.queryMovCon.Eof do
+   begin
+     item := lista.Items.Add;
+     item.Detail := FormatFloat('R$ ###,##0.00', dm.queryMovCon.FieldByName('valor').Value) + ' - ' + dm.queryMovCon.FieldByName('tipo').AsString;
+     item.Text := dm.queryMovCOn.FieldByName('movimento').AsString;
+     dm.queryMovCOn.Next;
+   end;
+   lista.EndUpdate;
+end;
+
+proprocedure TFrmMov.totalizar;
+begin
+
+end;
+
+proprocedure TFrmMov.totalizarEntradas;
+begin
+
+end;
+
+proprocedure TFrmMov.totalizarSaidas;
+begin
+
+end;
+
+end.

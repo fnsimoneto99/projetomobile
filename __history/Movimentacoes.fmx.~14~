@@ -1,0 +1,19 @@
+object frmMov: TfrmMov
+  Left = 0
+  Top = 0
+  Caption = 'Movimenta'#231#245'es'
+  ClientHeight = 499
+  ClientWidth = 343
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 0
+  object LBackground: TLayout
+    Align = Client
+    Size.Width = 343.000000000000000000
+    Size.Height = 499.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

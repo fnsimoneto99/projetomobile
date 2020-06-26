@@ -335,6 +335,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -369,6 +371,14 @@
         </DCCReference>
         <DCCReference Include="NovoPedido.pas">
             <Form>FrmNovoPedido</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Movimentacoes.pas">
+            <Form>frmMov</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Reservas.pas">
+            <Form>frmReservas</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

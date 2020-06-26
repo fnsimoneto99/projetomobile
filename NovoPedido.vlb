@@ -11,9 +11,6 @@ Coordinates=530,280,95,51
 [dm.queryPratosCon]
 Coordinates=340,322,112,51
 
-[LConteudo]
-Coordinates=290,400,68,33
-
 [LRodapeForm]
 Coordinates=200,400,84,33
 
@@ -119,4 +116,7 @@ Coordinates=119,178,82,33
 [ovB_Adicionar]
 Coordinates=200,340,50,51
 Visible=True
+
+[LConteudo]
+Coordinates=290,400,68,33
 

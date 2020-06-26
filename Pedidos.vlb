@@ -1,3 +1,6 @@
 ﻿[dm.queryPedidosCon]
 Visible=False
 
+[dm.oQ_ItensPedido]
+Visible=False
+
